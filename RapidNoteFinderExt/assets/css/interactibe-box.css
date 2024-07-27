@@ -1,0 +1,23 @@
+#interactive-box {
+    position: fixed;
+    width: 70%;
+    height: 90%;
+    background-color: rgba(0,0,0, 0.8);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1000000000;
+}
+
+#interactive-box  .MuiButtonBase-root.MuiIconButton-root{
+    position: absolute;
+    top: 50%;
+}
+
+#interactive-box .MuiButtonBase-root.MuiIconButton-root[aria-label="forward"] {
+    right: 0%;
+}
+
+#interactive-box  .MuiButtonBase-root.MuiIconButton-root .MuiSvgIcon-root {
+    font-size: 50px;
+}

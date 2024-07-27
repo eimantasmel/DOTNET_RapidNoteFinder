@@ -1,0 +1,20 @@
+.create-note-container > .content {
+    height: 70%;
+}
+
+.create-note-container > .save-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.create-note-container > .save-btn:hover{
+    background-color: darkred;
+}

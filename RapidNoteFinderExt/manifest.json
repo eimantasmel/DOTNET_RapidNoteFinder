@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ASP.NET CORE RPD Note Finder",
+  "version": "1.0.0",
+  "description": "It quickly will find your added notes. ``````````````Do not forget launch redix.exe when running this application locally```````````````",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "./assets/img/icon.png",
+    "48": "./assets/img/icon.png",
+    "128": "./assets/img/icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["./dist/content_bundle.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/packages/summernote-bs4.min.js"],
+      "matches": ["*://*/*"]
+    },
+    {
+      "resources": ["assets/packages/jquery-3.6.0.min.js"],
+      "matches": ["*://*/*"]
+    }
+  ]
+}
+
+
